@@ -8,7 +8,7 @@ defmodule OkcrbServer.Webhook.PingController do
         |> Poison.encode!
 
       HTTPoison.start
-      HTTPoison.post!("https://hooks.slack.com/services/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", data)
+      HTTPoison.post!(System.get_env("SLACK_WEBHOOK_URL"), data)
     end)
 
     json conn, :ok
