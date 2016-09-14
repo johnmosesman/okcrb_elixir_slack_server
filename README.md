@@ -1,3 +1,7 @@
+# About
+
+This is a simple Phoenix server for responding to Slack slash commands and webhooks. It was made for a lightning talk at a local Ruby meetup.
+
 # OkcrbServer
 
 To start your Phoenix app:
